@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="textView">Amount Borrowed</string>
+    <string name="IntrestRate">Interest Rate</string>
+    <string name="LoanTerm">Loan Term</string>
+    <string name="TaxesInsurance"><![CDATA[Taxes & Insurance]]></string>
+    <string name="checkBox">0.1 % of Amount Borrowed</string>
+    <string name="MonthlyPayment">Monthly Payment</string>
+    <string name="button">Calculate</string>
+    <string name="radioButton">7 "years "</string>
+    <string name="radioButton2">15 "years"</string>
+    <string name="radioButton3">30 "years"</string>
+    <string name="seekBar">seekBar</string>
+    <string name="action_clear">Clear</string>
+
+
+
+</resources>

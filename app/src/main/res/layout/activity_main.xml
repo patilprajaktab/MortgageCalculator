@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:focusableInTouchMode="true"
+    android:touchscreenBlocksFocus="false"
+    android:background="#fffff1dc"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textView"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+
+
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:autoText="true"
+        android:editable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textStyle="italic"
+        android:visibility="visible"
+        android:width="10dp"
+        android:numeric="decimal"
+        android:maxLength="10"/>
+        <!--android:layout_alignBottom="@+id/textView" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/IntrestRate"
+        android:id="@+id/IntrestRate"
+        android:textIsSelectable="false"
+
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:nestedScrollingEnabled="false"
+
+        android:minWidth="60dp"
+        android:progress="1"
+        android:indeterminate="false"
+        android:layout_alignTop="@+id/IntrestRate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/LoanTerm"
+        android:id="@+id/LoanTerm"
+        android:layout_marginTop="64dp"
+        android:layout_alignTop="@+id/radioGroup2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/TaxesInsurance"
+        android:id="@+id/TaxesInsurance"
+        android:layout_below="@+id/LoanTerm"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="88dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBox"
+        android:id="@+id/checkBox"
+        android:layout_alignBottom="@+id/TaxesInsurance"
+        android:layout_alignLeft="@+id/seekBar"
+        android:layout_alignStart="@+id/seekBar"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:id="@+id/button"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/TaxesInsurance"
+        android:layout_toRightOf="@+id/LoanTerm"
+        android:layout_toEndOf="@+id/LoanTerm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/MonthlyPayment"
+        android:id="@+id/MonthlyPayment"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:editable="false"
+        android:focusable="true"
+        android:layout_alignBottom="@+id/MonthlyPayment"
+        android:layout_alignRight="@+id/radioGroup2"
+        android:layout_alignEnd="@+id/radioGroup2"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:importantForAccessibility="no"
+        android:inputType="none" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/radioGroup2"
+        android:layout_below="@+id/seekBar"
+        android:layout_toRightOf="@+id/MonthlyPayment"
+        android:layout_toEndOf="@+id/MonthlyPayment">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton"
+            android:id="@+id/radioButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton2"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton3"
+            android:id="@+id/radioButton3" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText"
+        android:layout_toLeftOf="@+id/seekBar"
+
+        android:layout_toStartOf="@+id/editText"
+        android:textSize="10dp" />
+
+    <!--android:layout_toEndOf="@+id/textView" />-->
+
+</RelativeLayout>
